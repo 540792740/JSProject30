@@ -14,7 +14,7 @@
     </div>
 
 
-  <style>
+<style>
     html {
       background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
       background-size: cover;
@@ -60,12 +60,34 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      /*transition: all 0.5s;*/
+      transition-timing-function: cubic-bezier(0.16, 0.24, 0.57, 1.29);
     }
 
-  </style>
+</style>
+    <script>
+        const secondHand = document.querySelector('.second-hand');
+        const minHand = document.querySelector('.min-hand');
+        const HourHand = document.querySelector('.hour-hand');
+        function setDate() {
+            const now = new Date();
+            const second = now.getSeconds();
+            const secondsDegrees = 90 + second * 6;
+            secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-  <script>
+            const min = now.getMinutes();
+            const minDegrees = 90 + min * 6
+            minHand.style.transform = `rotate(${minDegrees}deg)`;
 
+
+            const hour = now.getHours();
+            const hourDegrees = 90 + hour / 12 * 360
+            HourHand.style.transform = `rotate(${hourDegrees}deg)`;
+
+        }
+    setInterval(setDate, 1000)
 
   </script>
 </body>
