@@ -16,5 +16,8 @@
     * transform-origin: 100%;  -> move hand to the end
 ####3. Update CSS variables with JS
     * This project is the way to dynamic change Spacing and blur.
-
+    * <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    * Using --space by define in :root{] and using with `--spacing`
+        :root{--spacing: 10px;}
+        img{ padding: var(--spacing);}  
 ####4. 
