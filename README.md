@@ -20,4 +20,7 @@
     * Using --space by define in :root{] and using with `--spacing`
         :root{--spacing: 10px;}
         img{ padding: var(--spacing);}  
+    * document.querySelectorAll('.controls input'). 
+        forEach(input => input.addEventListener('change', handleUpdate))
+
 ####4. 

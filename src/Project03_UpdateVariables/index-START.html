@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:data-name="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
@@ -9,7 +9,8 @@
 
   <div class="controls">
     <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10"
+           data-sizing="px" data-name='wes' data-cool="poop">
 
     <label for="blur">Blur:</label>
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
@@ -23,19 +24,19 @@
   <style>
     :root{
       --base: #ffc600;
-      --spacing: 10px;
-      --blur: 10px;
+      --spacing: 50px;
+      --blur: 1px;
     }
 
     img{
       padding: var(--spacing);
-
-
+      background: var(--base);
+      filter: blur(var(--blur));
     }
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+    .hl{
+      color:var(--base)
+    }
 
     body {
       text-align: center;
@@ -56,7 +57,16 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll('.controls input')
 
+    function handleUpdate(){
+      console.log(this.dataset)
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix)
+    }b
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate))
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))
 
   </script>
 
