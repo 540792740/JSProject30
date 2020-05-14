@@ -12,7 +12,8 @@
         const second = now.getSeconds();
         const min = now.getMinutes();
     * document.querySelector('.second-hand').style.transform = `rotate(${minDegrees}deg)`;
-    
+    * transition: all 0.5s;
+    * transform-origin: 100%;  -> move hand to the end
 ####3. Update CSS variables with JS
     * This project is the way to dynamic change Spacing and blur.
 
