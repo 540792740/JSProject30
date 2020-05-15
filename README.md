@@ -29,10 +29,14 @@
 * `const fullNames = inventors.map(inventor => inventor.first + " " + inventor.last)` <br>
   `const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)`
 * `const links = Array.from(category.querySelectorAll('a'));`
-  `const links = [...category.querySelectorAll('a')];
-`    
- 
+  `const links = [...category.querySelectorAll('a')];`    
 
+* <h4>Hash table</h4>:
+    `const transportation = data.reduce(function (obj, item) {`
+           `if(!obj[item]){obj[item] = 0;}`   <br>
+           `obj[item]++;` <br>
+           `return obj`   <br>
+         `},{});`
 
 
 
