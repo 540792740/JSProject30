@@ -26,6 +26,13 @@
 ####4. Array Cardio
 * `array.filter(inventor => (inventor.year >= 1500))`
 * `console.table(fifteen)` -> table console
+* `const fullNames = inventors.map(inventor => inventor.first + " " + inventor.last)` <br>
+  `const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)`
+* `const links = Array.from(category.querySelectorAll('a'));`
+  `const links = [...category.querySelectorAll('a')];
+`    
+ 
+
 
 
 
