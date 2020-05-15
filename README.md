@@ -23,4 +23,10 @@
 * `document.querySelectorAll('.controls input')`  <br> 
     `forEach(input => input.addEventListener('change', handleUpdate))`
 
-####4. 
+####4. Array Cardio
+* `array.filter(inventor => (inventor.year >= 1500))`
+* `console.table(fifteen)` -> table console
+
+
+
+
