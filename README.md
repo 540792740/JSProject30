@@ -38,6 +38,11 @@
            `return obj`   <br>
          `},{});`
 
-
+####5. Flex Panel
+* `justify-content: center;`    <br>
+  `align-items: center;`
+* `.panel > *:first-child{transform: translateY(-100%);}`
+* `myDIV:hover { width: 400px;}`
+  `document.getElementById("myDIV").addEventListener("transitionend", myFunction);`
 
 

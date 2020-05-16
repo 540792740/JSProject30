@@ -125,12 +125,12 @@
   <script>
     const panels = document.querySelectorAll('.panel');
 
-    function tooggleOpen() {
+    function toggleOpen() {
       console.log('Hello')
       this.classList.toggle('open');
     }
 
-    panels.forEach(panel => panel.addEventListener('click', tooggleOpen));
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
     function toggleActive(e) {
       if (e.propertyName.includes('flex')){
