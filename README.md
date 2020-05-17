@@ -45,4 +45,7 @@
 * `myDIV:hover { width: 400px;}`
   `document.getElementById("myDIV").addEventListener("transitionend", myFunction);`
 
+####6. Ajax
+* `function numberWithCommas(x){ return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');}`
+
 
