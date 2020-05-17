@@ -47,5 +47,5 @@
 
 ####6. Ajax
 * `function numberWithCommas(x){ return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');}`
-
+* Promise.then(data => arr.push(...data)
 
