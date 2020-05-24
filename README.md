@@ -49,3 +49,10 @@
 * `function numberWithCommas(x){ return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');}`
 * Promise.then(data => arr.push(...data)
 
+####7. Array
+* const isAdult = people.**some**(person => (new Date()).getFullYear() - 19 >= person.year)
+* const isAdult = people.**every**(person => (new Date()).getFullYear() - 19 >= person.year)
+* const isAdult = people.**find** (comment => comment.id === 823423)
+* const index = comments.**findIndex**(comment => comment.id === 823423);
+* Delete
+    
