@@ -55,4 +55,7 @@
 * const isAdult = people.**find** (comment => comment.id === 823423)
 * const index = comments.**findIndex**(comment => comment.id === 823423);
 * Delete
-    
+    `const newCommand = [`  <br>
+            `...comments.slice(0, index),`<br>
+            `...comments.slice(index + 1)`<br>
+    `];`
