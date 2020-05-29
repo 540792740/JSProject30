@@ -67,3 +67,10 @@
     `ctx.lineWidth = 20`
 * The way to change color:  <br>
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
+
+* `console.group()`  <br>
+  `console.groupEnd()`
+* `console.time('for loop');` <br>
+  `for(let i = 0; i < 1000; i++){} `  <br>
+  `console.timeEnd('for loop'); `
