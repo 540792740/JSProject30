@@ -59,3 +59,11 @@
             `...comments.slice(0, index),`<br>
             `...comments.slice(index + 1)`<br>
     `];`
+
+#### 8. Canvas
+* Make line become round: <br>
+    `ctx.lineJoin ='round';` <br>
+    `ctx.lineCap = 'round';` <br>
+    `ctx.lineWidth = 20`
+* The way to change color:  <br>
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
